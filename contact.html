@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee-House</title>
+    <style>
+         .footer {
+            background-color: #4b2e2e;
+            color: #FAF3E0;
+            padding: 60px 0;
+        }
+
+        .footer h5,
+        .footer-logo,
+        .footer a {
+            color: #D3B588;
+        }
+
+        .footer a:hover {
+            color: #FAF3E0;
+        }
+
+        .footer .btn-subscribe {
+            background-color: #D3B588;
+            color: #2d2d2d;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <h4 style="font-weight: 700;">Coffee-House <i style="padding-left: 2px; font-size: 20px; padding-top: 10px;"
+                    class="fa-solid fa-mug-saucer"></i></h4>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><b>Home</b></a></li>
+                <li><a href="./about.html"><b>About </b></a></li>
+                <li><a href="#offer"><b>Offer</b></a></li>
+                <li><a href="./contact.html"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars ano" style="color: #fff;"></i>
+    </header>
+
+    <!-- hero-section -->
+    <main>
+        <section>
+            <div class="hero-wrapper">
+                <h1 class="hero-heading hh" data-aos="zoom-in">Life’s Too Short<br> <span style="color: #8B0000;">for Bad Coffee </span>
+                </h1>
+                <p class="hero-sub-heading" data-aos="zoom-in">From Distant Mountains to Your Morning Mug,
+                    <br> Taste the Journey of the World’s <br>
+                    Finest Coffee Beans.
+                    Crafted with Precision, Sourced with Passion
+                </p>
+                <button class="btn-hero">Order now</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="vh-100">
+        <div class="container h-100 pt-5">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-9">
+              <form name="contact" >
+                <div class="card" style="border-radius: 18px;" data-aos="fade-up" data-aos-duration="3000">
+                  <div class="card-body">
+                    <div class="row align-items-center pt-4 pb-3">
+                      <!-- <div class="col-md-3 ps-5">
+                        <h6 class="mb-0">Full name</h6>
+                      </div>
+                      <div class="col-md-9 pe-5">
+                        <input type="text" name="Support" class="form-control form-control-lg" />
+                      </div>
+                    </div>
+                    <hr class="mx-n3"> -->
+                    <div class="row align-items-center py-3">
+                      <div class="col-md-3 ps-5">
+                        <h6 class="mb-0">Email address</h6>
+                      </div>
+                      <div class="col-md-9 pe-5">
+                        <input type="email" class="form-control form-control-lg" placeholder="example@example.com" />
+                      </div>
+                    </div>
+                    <hr class="mx-n3">
+                    <div class="row align-items-center py-3">
+                      <div class="col-md-3 ps-5">
+                        <h6 class="mb-0">Home address</h6>
+                      </div>
+                      <div class="col-md-9 pe-5">
+                        <input type="address" class="form-control form-control-lg" placeholder="" />
+                      </div>
+                    </div>
+                    <hr class="mx-n3">
+                    <div class="row align-items-center py-3">
+                      <div class="col-md-3 ps-5">
+                        <h6 class="mb-0">Message</h6>
+                      </div>
+                      <div class="col-md-9 pe-5">
+                        <textarea class="form-control" rows="3" placeholder="What you want....."></textarea>
+                      </div>
+                    </div>
+                    <hr class="mx-n3">
+                    <div class="px-5 py-4">
+                      <button type="button" onclick="showAlert()" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
+    
+
+      <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- About Section -->
+                <div class="col-md-3">
+                    <div class="footer-logo" data-aos="zoom-in">The Coffee House</div>
+                    <p>Your daily dose of freshly brewed coffee and delicious pastries. Come join us for a warm and cozy coffee experience.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="#offer">Offer</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, Brewtown</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@coffeehouse.com</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-4">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <p>Get the latest updates on new brews and special offers.</p>
+                    <form action="#">
+                        <input style="border: 1px solid #8B0000;" type="email" class="newsletter-input" placeholder="Your email address">
+                        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center mt-4">
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="copyright">© 2024 The Coffee House. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="www.whatsapp.com" class="wat"><i style=" font-size: 30px;" class="fa-brands fa-whatsapp"></i></a>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script>
+        function showAlert() {   
+      alert("Messages are closed for now website isn't bought yet!");
+    }
+    </script>
+</body>
+
+</html>

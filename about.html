@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee-House</title>
+    <style>
+       
+
+        /* Footer styling */
+        .footer {
+            background-color: #4b2e2e;
+            color: #FAF3E0;
+            padding: 60px 0;
+        }
+
+        .footer h5,
+        .footer-logo,
+        .footer a {
+            color: #D3B588;
+        }
+
+        .footer a:hover {
+            color: #FAF3E0;
+        }
+
+        .footer .btn-subscribe {
+            background-color: #D3B588;
+            color: #2d2d2d;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        /* Responsive image */
+        /* .abimg {
+            padding: 20px;
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+        } */
+
+        .abimg {
+            width: 100%;
+            height: 400px;
+            border: 2px solid #ff3d0036;
+            border-radius: 15px;
+            box-shadow: 4px 7px 7px 0px #00000042;
+            cursor: pointer;
+            margin: 5px;
+            transition: 400ms;
+        }
+
+        .abimg:hover {
+            box-shadow: 12px 12px 32px rgba(0, 0, 0, 0.1),
+                -5px -5px 15px #313030;
+        }
+
+        .testimonial-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+
+        .testimonial-box {
+            text-align: center;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        .testimonial-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #d2a679;
+        }
+
+        .testimonial-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .testimonial-role {
+            color: #888;
+            font-style: italic;
+        }
+
+        /* Responsive grid adjustments */
+        @media (min-width: 992px) {
+            .testimonial-section .col-lg-4 {
+                margin-bottom: 0;
+            }
+        }
+
+        .testimonial-card {
+            border: none;
+            border-radius: 10px;
+            background-color: #FAF3E0;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-weight: bold;
+            color: #8B4513;
+        }
+
+        .card-text {
+            color: #5F5F5F;
+            font-style: italic;
+        }
+
+        .btn-primary {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+
+        .btn-primary:hover {
+            background-color: #6A0000;
+            border-color: #6A0000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <h4 style="font-weight: 700;">Coffee-House <i style="padding-left: 2px; font-size: 20px;"
+                    class="fa-solid fa-mug-saucer"></i></h4>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><b>Home</b></a></li>
+                <li><a href="about.html"><b>About</b></a></li>
+                <li><a href="#offer"><b>Offer</b></a></li>
+                <li><a href="./contact.html"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars ano" style="color: #fff;"></i>
+    </header>
+
+    <!-- hero-section -->
+    <main>
+        <section>
+            <div class="hero-wrapper">
+                <h1 class="hero-heading hh" data-aos="zoom-in">Life’s Too Short<br> <span style="color: #8B0000;">for Bad Coffee</span>
+                </h1>
+                <p class="hero-sub-heading" data-aos="zoom-in">From Distant Mountains to Your Morning Mug,<br> Taste the Journey of the
+                    World’s<br> Finest Coffee Beans.</p>
+                <button class="btn-hero">Order now</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- About Us Section -->
+    <div class="container-fluid" style="padding: 30px;">
+        <h2 class="text-center pb-2 pt-3" style="font-weight: 700; color: #8B0000;">ABOUT US</h2>
+        <div class="row pool">
+            <div class="col-md-6">
+                <img src="./image/ano2.avif" alt="Coffee Image" class="abimg" data-aos="fade-up" data-aos-duration="3000">
+            </div>
+
+            <div class="col-md-6">
+
+
+                <p class="text-dark">
+                    <span style="font-weight: 700;" id="services">Welcome to our Coffee-House, </span> where passion for
+                    coffee meets excellence in every cup. We carefully source
+                    <br>
+                    beans from the world’s finest regions and ensure every sip is a delightful experience. Whether <br>
+                    you're a casual coffee lover or a connoisseur, we promise an unforgettable coffee journey. <br>
+                    Welcome to Coffee-House, where passion for coffee meets excellence in every cup. We carefully source
+                    <br>
+                    beans from the world’s finest regions and ensure every sip is a delightful experience. Whether <br>
+                    you're a casual coffee lover or a connoisseur, we promise an unforgettable coffee journey. <br>
+                    Welcome to Coffee-House, where passion for coffee meets excellence in every cup. We carefully source
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="text-center" style="color: #8B0000;">OUR TEAM</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="https://via.placeholder.com/120" alt="Testimonial 1" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">CEO & Founder</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="https://via.placeholder.com/120" alt="Testimonial 2" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="https://via.placeholder.com/120" alt="Testimonial 3" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">Financial Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="https://via.placeholder.com/120" alt="Testimonial 4" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">UX/UI Designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="https://via.placeholder.com/120" alt="Testimonial 5" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">Marketing Manager</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box" data-aos="fade-up" data-aos-duration="3000">
+                        <img src="https://via.placeholder.com/120" alt="Testimonial 6" class="testimonial-img">
+                        <h5 class="testimonial-name">undisclosed</h5>
+                        <p class="testimonial-role">Manager</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-center mt-4">
+                <button class="btn btn-primary"></button>
+            </div> -->
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Client Testimonies</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow testimonial-card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <!-- <img src="https://via.placeholder.com/100" alt="Client Image" class="rounded-circle mb-3"> -->
+                        <h5 class="card-title">Mr Frank</h5>
+                        <p class="card-text"><em>"The best coffee I've ever tasted! Highly recommend Coffee House for
+                                their cozy atmosphere and fantastic brews."</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow testimonial-card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <!-- <img src="https://via.placeholder.com/100" alt="Client Image" class="rounded-circle mb-3"> -->
+                        <h5 class="card-title">Pinky</h5>
+                        <p class="card-text"><em>"I come here every morning before work. The staff is always friendly,
+                                and the coffee is consistently amazing!"</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow testimonial-card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <!-- <img src="https://via.placeholder.com/100" alt="Client Image" class="rounded-circle mb-3"> -->
+                        <h5 class="card-title">Michael</h5>
+                        <p class="card-text"><em>"A gem of a coffee shop! Everything from the pastries <br> to the
+                                espresso
+                                is top-notch."</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Additional testimonials, hidden by default -->
+            <div class="col-md-4 mb-4 d-none" id="extra-testimonial-1">
+                <div class="card shadow testimonial-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pookie</h5>
+                        <p class="card-text"><em>"Absolutely love the ambiance here. It's a perfect place to relax and
+                                enjoy
+                                a
+                                cup of coffee."</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-none" id="extra-testimonial-2">
+                <div class="card shadow testimonial-card">
+                    <div class="card-body">
+                        <h5 class="card-title">carl</h5>
+                        <p class="card-text"><em>"Friendly staff, great coffee, and a wonderful spot to work or read. I
+                                keep
+                                coming back."</em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 d-none" id="extra-testimonial-3">
+                <div class="card shadow testimonial-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Emmanuel</h5>
+                        <p class="card-text"><em>"The coffee blends here are unmatched. Always a treat to stop by and
+                                enjoy
+                                a
+                                cup."</em></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="text-center mt-4">
+                <button class="btn btn-primary" onclick="showMoreTestimonials()">Read More Testimonials</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- About Section -->
+                <div class="col-md-3">
+                    <div class="footer-logo">The Coffee House</div>
+                    <p>Your daily dose of freshly brewed coffee and delicious pastries. Come join us for a warm and cozy
+                        coffee experience.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="#offer">Offer</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, Brewtown</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@coffeehouse.com</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-4">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <p>Get the latest updates on new brews and special offers.</p>
+                    <form action="#">
+                        <input type="email" class="newsletter-input" placeholder="Your email address"
+                            style="border: 1px solid #8B0000;">
+                        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center mt-4">
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="copyright text-light">© 2024 The Coffee House. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="www.whatsapp.com" class="wat"><i style=" font-size: 30px;" class="fa-brands fa-whatsapp"></i></a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
